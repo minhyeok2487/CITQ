@@ -44,6 +44,7 @@
 * [프록시 서버](network/undefined.md)
 * [Http Protocol](network/http-protocol.md)
 * [소켓(Socket)](network/socket.md)
+* [로드 밸런싱(Load Balancing)](network/load-balancing.md)
 
 ## 디자인 패턴 <a href="#design_pattern" id="design_pattern"></a>
 
