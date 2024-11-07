@@ -35,11 +35,3 @@ layout:
 
 {% embed url="https://www.threads.net/@devmh1995?xmt=AQGzcAqsxU8M5K9lrzzILQY1OOab9dsUpyCgNyuR_BhIGjM" %}
 
-최근에는 학습 효율을 높이기 위해, 공부한 내용을 바탕으로 유튜브 영상을 만들고 있습니다.&#x20;
-
-자기 전이나 게임을 할 때처럼 글을 읽기 어려운 상황에서도 귀로 들으면서 학습할 수 있도록 하기 위해서입니다.
-
-제 재생목록이 많은 개발자 분들에게 조금이나마 도움이 되었으면 좋겠습니다.
-
-{% embed url="https://www.youtube.com/@devmh1995" %}
-

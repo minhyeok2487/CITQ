@@ -10,6 +10,7 @@
 * [힙(Heap)과 메모리(Memory)](java/heap-memory.md)
 * [자바 - JDK 버전과 JRE](java/jdk-jre.md)
 * [스레드(Thread)](java/thread.md)
+* [예외(Throwable)](java/throwable.md)
 
 ## 스프링 <a href="#spring" id="spring"></a>
 
@@ -64,3 +65,7 @@
 ## 개발자 <a href="#developer" id="developer"></a>
 
 * [개발  방법론 TDD](developer/tdd.md)
+
+## 운영체제 <a href="#os" id="os"></a>
+
+* [JIT & AOT 컴파일](os/jit-and-aot.md)
