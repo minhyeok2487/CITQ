@@ -11,6 +11,7 @@
 * [자바 - JDK 버전과 JRE](java/jdk-jre.md)
 * [스레드(Thread)](java/thread.md)
 * [예외(Throwable)](java/throwable.md)
+* [Call By Value와 Call By Reference](java/call-by-value-call-by-reference.md)
 
 ## 스프링 <a href="#spring" id="spring"></a>
 
