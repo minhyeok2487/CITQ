@@ -8,7 +8,7 @@
 * [Garbage Collection](java/garbage-collection.md)
 * [자료형과 객체 비교](java/undefined.md)
 * [힙(Heap)과 메모리(Memory)](java/heap-memory.md)
-* [자바 - JDK 버전과 JRE](java/jdk-jre.md)
+* [JDK 버전과 JRE](java/jdk-jre.md)
 * [스레드(Thread)](java/thread.md)
 * [예외(Throwable)](java/throwable.md)
 * [Call By Value와 Call By Reference](java/call-by-value-call-by-reference.md)
