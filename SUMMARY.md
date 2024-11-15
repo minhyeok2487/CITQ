@@ -20,7 +20,7 @@
 * [@Autowired, @RequiredArgsConstructor](spring/autowired-requiredargsconstructor.md)
 * [인증(Authentication)과 인가(Authorization)](spring/authentication-authorization.md)
 * [트랜잭션(Transaction)](spring/transaction.md)
-* [QueryDSL과 SQL Injection](spring/querydsl-sql-injection.md)
+* [QueryDSL과 SQL Injection](spring/querydsl-sql-injection.md)
 * [SecurityContextHolder](spring/securitycontextholder.md)
 
 ## 알고리즘과 자료구조 <a href="#algorithm" id="algorithm"></a>
@@ -28,7 +28,7 @@
 * [Set 자료구조](algorithm/set.md)
 * [정렬 알고리즘](algorithm/undefined.md)
 * [우선순위 큐 (Priority Queue)](algorithm/priority-queue.md)
-* [DFS와 BFS](algorithm/dfs-bfs.md)
+* [DFS와 BFS](algorithm/dfs-bfs.md)
 * [힙(Heap) 자료구조](algorithm/heap.md)
 * [스택(Stack)과 큐(Queue)](algorithm/stack-queue.md)
 * [암호화 알고리즘](algorithm/undefined-1.md)
@@ -63,6 +63,7 @@
 * [CORS 정책](web/cors.md)
 * [동시성 제어](web/undefined.md)
 * [N+1 문제](web/n+1.md)
+* [웹 브라우저 동작원리](web/undefined-1.md)
 
 ## 개발자 <a href="#developer" id="developer"></a>
 
