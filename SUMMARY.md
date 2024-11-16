@@ -32,6 +32,7 @@
 * [힙(Heap) 자료구조](algorithm/heap.md)
 * [스택(Stack)과 큐(Queue)](algorithm/stack-queue.md)
 * [암호화 알고리즘](algorithm/undefined-1.md)
+* [LinkedList](algorithm/linkedlist.md)
 
 ## 데이터베이스 <a href="#database" id="database"></a>
 
