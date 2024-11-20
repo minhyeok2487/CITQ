@@ -37,11 +37,11 @@
 
 ## 데이터베이스 <a href="#database" id="database"></a>
 
+* [기본](database/undefined.md)
 * [인덱스 (Index)](database/index.md)
 * [정규화 (Normalization)](database/normalization.md)
 * [파티셔닝과 샤딩(Partitioning & Sharding)](database/partitioning-and-sharding.md)
 * [트랜잭션(Transaction)과 락(Lock)](database/transaction-lock.md)
-* [기본](database/undefined.md)
 
 ## 네트워크 <a href="#network" id="network"></a>
 
