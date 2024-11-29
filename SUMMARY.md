@@ -57,10 +57,10 @@
 
 ## 디자인 패턴 <a href="#design_pattern" id="design_pattern"></a>
 
-* [전략 패턴 (Strategy Pattern)](design\_pattern/strategy-pattern.md)
-* [싱글톤 패턴 (Singleton Pattern)](design\_pattern/singleton-pattern.md)
-* [템플릿 메서드 패턴과 전략 패턴](design\_pattern/undefined.md)
-* [데코레이터 패턴 (Decorator pattern)](design\_pattern/decorator-pattern.md)
+* [전략 패턴 (Strategy Pattern)](design_pattern/strategy-pattern.md)
+* [싱글톤 패턴 (Singleton Pattern)](design_pattern/singleton-pattern.md)
+* [템플릿 메서드 패턴과 전략 패턴](design_pattern/undefined.md)
+* [데코레이터 패턴 (Decorator pattern)](design_pattern/decorator-pattern.md)
 
 ## 웹 <a href="#web" id="web"></a>
 
@@ -77,3 +77,4 @@
 
 * [JIT & AOT 컴파일](os/jit-and-aot.md)
 * [컨텍스트 스위칭(Context Switching)](os/context-switching.md)
+* [프로세스와 스레드](os/undefined.md)
