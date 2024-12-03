@@ -17,3 +17,44 @@ try-catch와 try-with-resource의 가장 큰 차이점은 자원 관리 방식�
 기존의 try-catch 구문은 자원을 수동으로 닫아주어야 했습니다. 예를 들어 파일을 읽거나 데이터베이스 연결을 할 때, finally 블록에서 직접 close() 메소드를 호출해야 했습니다. 이 방식은 코드가 길어지고, 실수로 자원을 닫지 않을 수 있는 위험이 있었습니다.\
 반면, Java 7에서 도입된 try-with-resources는 AutoCloseable 인터페이스를 구현한 자원을 자동으로 닫아줍니다. try 구문의 괄호 안에서 자원을 선언하면, try 블록이 끝날 때 자동으로 close() 메소드가 호출됩니다.\
 추가로, try-with-resources는 자원을 닫을 때 발생하는 예외도 더 잘 처리합니다. 만약 try 블록에서 예외가 발생하고, close() 메소드에서도 예외가 발생한다면, try 블록의 예외가 기본적으로 전달되고 close()의 예외는 suppressed 예외로 처리됩니다. 이러한 에외들은 getSuppressed() 메소드로 확인 할 수 있습니다.
+
+
+
+## **Q. 아래 코드의 문제점은 무엇인가요?**
+
+```java
+static class CheckedRunnable implements Runnable {  
+    @Override  
+    public void run() throws InterruptedException {  
+        Thread.sleep(3000); 
+    }  
+}
+
+@FunctionalInterface  
+public interface Runnable {  
+   void run();  
+}
+```
+
+핵심적인 문제는 Runnable 인터페이스의 run() 메서드를 재정의할 때 InterruptedException과 같은 체크 예외를 throws 하는 부분입니다.\
+Java의 메서드 재정의 규칙에 따르면, 부모 메서드(이 경우 Runnable 인터페이스의 run())가 어떤 체크 예외도 던지지 않는 경우, 자식 메서드 또한 체크 예외를 던질 수 없습니다.\
+따라서 이 코드에서는 run() 메서드 내부에서 InterruptedException을 직접 처리해야 합니다. 구체적으로는 try-catch 블록을 사용하여 예외를 적절히 처리하거나, 런타임 예외로 변환해야 합니다.\
+예를 들어, 다음과 같이 수정할 수 있습니다:
+
+```java
+static class CheckedRunnable implements Runnable {  
+    @Override  
+    public void run() {  
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            // 예외 처리 또는 런타임 예외로 변환
+            Thread.currentThread().interrupt();
+        }
+    }  
+}
+```
+
+이렇게 하면 체크 예외 처리 규칙을 준수하면서, 예외 상황에 대해 안전하게 대응할 수 있습니다.
+
+이 접근 방식은 개발자가 예외 상황을 명시적으로 처리하도록 강제함으로써, 예기치 못한 프로그램 종료를 방지하고 더 견고한 코드를 작성할 수 있게 해줍니다.
