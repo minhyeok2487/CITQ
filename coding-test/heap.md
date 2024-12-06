@@ -53,7 +53,45 @@ boolean isEmpty = heap.isEmpty();
 
 
 
-## 1. 야근지수
+## 1. 더 맵게
+
+* [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
+* 프로그래머스 Lv.2 / 체감난이도 Lv.1
+* 효율성을 위한 우선순위 큐 사용 문제
+
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(int[] scoville, int K) {
+        int answer = 0;
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for(int i : scoville) {
+            pq.add(i);
+        }
+        
+        while(!pq.isEmpty()) {
+            int start = pq.poll();
+            if (start >= K) {
+                return answer;
+            } else {
+                if (pq.isEmpty()) {
+                    return -1;
+                } else {
+                    int next = pq.poll();
+                    pq.add(start + (next) * 2);
+                    answer++;
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
+
+
+
+## 2. 야근지수
 
 * [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12927)
 * 프로그래머스 Lv.3 / 체감난이도 Lv.2
@@ -96,7 +134,7 @@ class Solution {
 
 
 
-## 2. 이중우선순위 큐
+## 3. 이중우선순위 큐
 
 * [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42628)
 * 프로그래머스 Lv.3 / 체감난이도 Lv.3
@@ -146,7 +184,7 @@ class Solution {
 
 
 
-## 3. 디스크 컨트롤러 문제
+## 4. 디스크 컨트롤러 문제
 
 * [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42627)
 * 프로그래머스 Lv.3 / 체감난이도 Lv.3
