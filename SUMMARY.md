@@ -86,4 +86,5 @@
 * [DFS(깊이 우선 탐색)](coding-test/dfs.md)
 * [BFS(너비 우선 탐색)](coding-test/bfs.md)
 * [Greedy(그리디 알고리즘)](coding-test/greedy.md)
+* [해시(Hash)](coding-test/hash.md)
 * [수학적 사고](coding-test/undefined.md)
