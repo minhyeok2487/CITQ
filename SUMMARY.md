@@ -85,3 +85,4 @@
 * [DP(동적 계획법)](coding-test/dp.md)
 * [DFS(깊이 우선 탐색)](coding-test/dfs.md)
 * [BFS(너비 우선 탐색)](coding-test/bfs.md)
+* [Greedy(그리디 알고리즘)](coding-test/greedy.md)
