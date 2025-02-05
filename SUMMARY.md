@@ -68,6 +68,7 @@
 * [동시성 제어](web/undefined.md)
 * [N+1 문제](web/n+1.md)
 * [웹 브라우저 동작원리](web/undefined-1.md)
+* [URI, URL, URN](web/uri-url-urn.md)
 
 ## 개발자 <a href="#developer" id="developer"></a>
 
