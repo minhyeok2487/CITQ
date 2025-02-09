@@ -35,3 +35,6 @@ layout:
 
 {% embed url="https://www.threads.net/@devmh1995?xmt=AQGzcAqsxU8M5K9lrzzILQY1OOab9dsUpyCgNyuR_BhIGjM" %}
 
+반복학습 용 유튜브 쇼츠 채널
+
+{% embed url="https://www.youtube.com/@devmh1995" %}
