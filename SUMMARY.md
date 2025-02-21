@@ -22,6 +22,7 @@
 * [트랜잭션(Transaction)](spring/transaction.md)
 * [QueryDSL과 SQL Injection](spring/querydsl-sql-injection.md)
 * [SecurityContextHolder](spring/securitycontextholder.md)
+* [@EqualsAndHashCode](spring/equalsandhashcode.md)
 
 ## 알고리즘과 자료구조 <a href="#algorithm" id="algorithm"></a>
 
