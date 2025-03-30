@@ -48,10 +48,6 @@ Searagte Chaining은 같은 해시값을 가진 요소들을 하나의 '해시 �
 {% content-ref url="hashtable.md" %}
 [hashtable.md](hashtable.md)
 {% endcontent-ref %}
-
-{% content-ref url="../coding-test/hash.md" %}
-[hash.md](../coding-test/hash.md)
-{% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
 
