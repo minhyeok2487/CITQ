@@ -22,3 +22,17 @@
 
 마지막으로, 동기화 없이도 안전하게 처리할 수 있는 ‘AtomicInteger’ 같은 클래스를 활용하는 방법이 있습니다. 이는 원자적 연산을 제공하여 스레드 간 충돌 없이 값을 안전하게 변경할 수 있도록 도와줍니다. 코드가 간단하면서도 효율적이라는 장점이 있습니다.
 
+{% tabs %}
+{% tab title="비슷한 질문" %}
+{% content-ref url="../web/undefined.md" %}
+[undefined.md](../web/undefined.md)
+{% endcontent-ref %}
+
+{% content-ref url="../java/thread.md" %}
+[thread.md](../java/thread.md)
+{% endcontent-ref %}
+{% endtab %}
+{% endtabs %}
+
+
+
