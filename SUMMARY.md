@@ -45,6 +45,7 @@
 * [트랜잭션(Transaction)과 락(Lock)](database/transaction-lock.md)
 * [덤프(Dump)](database/dump.md)
 * [Redis](database/redis.md)
+* [격리 수준(MySQL)](database/mysql.md)
 
 ## 네트워크 <a href="#network" id="network"></a>
 
