@@ -2,7 +2,7 @@
 
 - [Welcome](README.md)
 
-## 자바 `<a href="#java" id="java"></a>`
+## 자바
 
 - [Generic](java/generic.md)
 - [Garbage Collection](java/garbage-collection.md)
@@ -15,7 +15,7 @@
 - [String, equals, StringBuffer](java/string-equals-stringbuffer.md)
 - [Thread와 비동기](java/thread-1.md)
 
-## 스프링 `<a href="#spring" id="spring"></a>`
+## 스프링
 
 - [Spring 동작 방식](spring/spring.md)
 - [@Autowired, @RequiredArgsConstructor](spring/autowired-requiredargsconstructor.md)
@@ -25,7 +25,7 @@
 - [SecurityContextHolder](spring/securitycontextholder.md)
 - [@EqualsAndHashCode](spring/equalsandhashcode.md)
 
-## 알고리즘과 자료구조 `<a href="#algorithm" id="algorithm"></a>`
+## 알고리즘과 자료구조
 
 - [Set 자료구조](algorithm/set.md)
 - [정렬 알고리즘](algorithm/undefined.md)
@@ -38,7 +38,7 @@
 - [자료구조 - 해시 테이블(HashTable)](algorithm/hashtable.md)
 - [자료구조 - Concurrent-hash-map](algorithm/concurrent-hash-map.md)
 
-## 데이터베이스 `<a href="#database" id="database"></a>`
+## 데이터베이스
 
 - [기본](database/undefined.md)
 - [인덱스 (Index)](database/index.md)
@@ -49,7 +49,7 @@
 - [Redis](database/redis.md)
 - [격리 수준(MySQL)](database/mysql.md)
 
-## 네트워크 `<a href="#network" id="network"></a>`
+## 네트워크
 
 - [전송 계층 (Transport Layer)](network/transport-layer.md)
 - [네트워크 계층 (Network Layer)](network/network-layer.md)
@@ -60,14 +60,14 @@
 - [소켓(Socket)](network/socket.md)
 - [로드 밸런싱(Load Balancing)](network/load-balancing.md)
 
-## 디자인 패턴 `<a href="#design_pattern" id="design_pattern"></a>`
+## 디자인 패턴
 
 - [전략 패턴 (Strategy Pattern)](design_pattern/strategy-pattern.md)
 - [싱글톤 패턴 (Singleton Pattern)](design_pattern/singleton-pattern.md)
 - [템플릿 메서드 패턴과 전략 패턴](design_pattern/undefined.md)
 - [데코레이터 패턴 (Decorator pattern)](design_pattern/decorator-pattern.md)
 
-## 웹 `<a href="#web" id="web"></a>`
+## 웹
 
 - [CORS 정책](web/cors.md)
 - [동시성 제어](web/undefined.md)
@@ -76,24 +76,24 @@
 - [URI, URL, URN](web/uri-url-urn.md)
 - [채팅 아키텍처 설계](web/undefined-2.md)
 
-## 개발자 `<a href="#developer" id="developer"></a>`
+## 개발자
 
 - [개발 방법론 TDD](developer/tdd.md)
 
-## 운영체제 `<a href="#os" id="os"></a>`
+## 운영체제
 
 - [JIT &amp; AOT 컴파일](os/jit-and-aot.md)
 - [컨텍스트 스위칭(Context Switching)](os/context-switching.md)
 - [프로세스와 스레드](os/undefined.md)
 - [싱글 스레드와 멀티 스레드](os/undefined-1.md)
 
-## 코딩테스트 `<a href="#coding-test" id="coding-test"></a>`
+## 코딩테스트
 
 - [Stack / Queue (스택 / 큐)](coding-test/stack-queue.md)
 - [Heap(우선 순위 큐)](coding-test/heap.md)
-- [DP(동적 계획법)](coding-test/dp.md)
-- [DFS(깊이 우선 탐색)](coding-test/dfs.md)
-- [BFS(너비 우선 탐색)](coding-test/bfs.md)
+- [DP(동적 계획법)](coding-test/dp.md)
+- [DFS(깊이 우선 탐색)](coding-test/dfs.md)
+- [BFS(너비 우선 탐색)](coding-test/bfs.md)
 - [Greedy(그리디 알고리즘)](coding-test/greedy.md)
 - [해시(Hash)](coding-test/hash.md)
 - [투 포인터 알고리즘](coding-test/undefined.md)
