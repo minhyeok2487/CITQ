@@ -180,3 +180,41 @@ ArrayList list = new ArrayList();
 list.add("Hello");
 String str = (String) list.get(0);
 ```
+
+
+
+## Q. 제네릭 클래스와 제네릭 메서드의 차이점은 무엇인가요?
+
+제네릭 클래스의 경우 앞서 설명한 내용이고, 제네릭 메서드는 적용하는 방식이 조금 다릅니다.
+
+
+
+**제네릭 메서드는 메서드 하나만 딱! 타입을 유연하게 정할 수 있는 것 입니다.**
+
+예를 들어, 던전에서 관리자가 아이템을 하나 꺼내서 "이게 뭐지?" 하면서 검사한다고 생각했을 때,
+
+그 아이템이 포션이든, 장비든, 뭐든 상관없이 그때그때 다룰 수 있는 거죠.
+
+```java
+public class Dungeon {
+    public <T> void printItemName(T item) {
+        System.out.println("아이템: " + item.toString());
+    }
+}
+```
+
+이걸 쓸 때는 타입을 굳이 안 정해도 컴파일러가 알아서 처리를 해줍니다.
+
+```java
+Dungeon dungeon = new Dungeon();
+dungeon.printItemName(new Potion("체력 회복", 50)); // 포션
+dungeon.printItemName(new Sword("롱소드")); // 장비
+```
+
+
+
+즉, 제네릭 클래스는 클래스 전체가 하나의 타입에 묶여 있고, 제네릭 메서드는 그 메서드만 독립적으로 타입을 가집니다.
+
+선언할 때도 메서드는 `<T>`를 메서드 앞에 붙이고, 호출할 때마다 타입이 바뀔 수 있습니다.
+
+그래서 제네릭 메서드는 특정 작업을 여러 타입에 맞춰 깔끔하게 처리할 때 쓰입니다. 컴파일러가 타입 안정성을 체크해주니까 형변환 없이 안전하고, 코드도 간결해집니다.
