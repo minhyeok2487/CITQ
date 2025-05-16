@@ -27,5 +27,5 @@ CPU 바운드 작업은 복잡한 수학 연산이나 데이터 처리처럼 CPU
 > 연관된 문서
 >
 > * [컨텍스트 스위칭](context-switching.md)
-> * [자바에서의 스레드](../java/thread.md)
+> * [자바에서의 스레드](../01_java/thread.md)
 

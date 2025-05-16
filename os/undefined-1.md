@@ -28,8 +28,8 @@
 [undefined.md](../web/undefined.md)
 {% endcontent-ref %}
 
-{% content-ref url="../java/thread.md" %}
-[thread.md](../java/thread.md)
+{% content-ref url="../01_java/thread.md" %}
+[thread.md](../01_java/thread.md)
 {% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
