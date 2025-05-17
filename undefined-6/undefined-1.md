@@ -24,8 +24,8 @@
 
 {% tabs %}
 {% tab title="비슷한 질문" %}
-{% content-ref url="../web/undefined.md" %}
-[undefined.md](../web/undefined.md)
+{% content-ref url="../undefined-4/undefined.md" %}
+[undefined.md](../undefined-4/undefined.md)
 {% endcontent-ref %}
 
 {% content-ref url="../01_java/thread.md" %}
