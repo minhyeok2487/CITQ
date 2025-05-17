@@ -117,3 +117,18 @@ public class OrderService {
 실제로 이 메서드는 프록시 객체를 통해 실행되며, Advice는 트랜잭션 시작/종료 로직을 자동으로 삽입합니다.
 
 이처럼 `@Transactional`은 AOP의 **Aspect, JoinPoint, Pointcut, Advice** 개념이 모두 적용된 아주 전형적인 예시이고, 핵심 비즈니스 로직과는 분리된 공통 처리 로직을 깔끔하게 관리할 수 있도록 도와줍니다.
+
+
+
+***
+
+### 다음 내용 추천
+
+{% content-ref url="transaction.md" %}
+[transaction.md](transaction.md)
+{% endcontent-ref %}
+
+{% content-ref url="authentication-authorization.md" %}
+[authentication-authorization.md](authentication-authorization.md)
+{% endcontent-ref %}
+
