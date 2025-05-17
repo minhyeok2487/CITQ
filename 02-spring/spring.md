@@ -120,8 +120,6 @@ public class OrderService {
 
 
 
-***
-
 {% hint style="info" %}
 ### 다음 내용 추천
 {% endhint %}
