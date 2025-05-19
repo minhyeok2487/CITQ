@@ -1,0 +1,196 @@
+# 03-01. Join
+
+## Q. Inner Join과 Outer Join의 차이를 설명하고, 각각을 언제 사용하는지 예를 들어 설명해주세요.
+
+`Inner Join`은 일명 **교집합**으로, 두 테이블 모두에 공통된 키 값이 있을 때만 데이터를 반환합니다.
+
+반면 `Outer Join`은 일명 **합집합**으로, 한쪽 테이블에만 데이터가 있어도 결과에 포함시킵니다.
+
+`Outer Join`은 방향에 따라 기준이 달라지며 `Left, Right, Full Outer Join`이 있습니다.
+
+
+
+예를 들어, `유저 테이블`과 `길드 테이블`이 있고, 유저 중 일부만 길드에 가입해있다고 했을때,
+
+`Inner Join`을 쓰면 길드에 가입한 유저만 조회가 됩니다.
+
+반면, 유저 테이블을 기준으로 `Left Outer Join`을 쓰면,
+
+길드에 가입하지 않은 유저도 NULL로 표시되어 함께 나옵니다.
+
+
+
+즉, "길드에 가입한 유저만 보고 싶다"면 `Inner Join`,
+
+"모든 유저의 상태를 보고싶다"면 `Outer Join`을 쓰는거죠.
+
+```sql
+-- 1. 길드에 가입한 유저만 보고 싶을 때 (Inner Join)
+SELECT u.user_id, u.username, g.guild_name
+FROM users u
+JOIN guild_membership g ON u.user_id = g.user_id;
+
+-- 2. 모든 유저와 길드 상태를 보고 싶을 때 (Left Outer Join)
+SELECT u.user_id, u.username, g.guild_name
+FROM users u
+LEFT JOIN guild_membership g ON u.user_id = g.user_id;
+```
+
+
+
+## Q. Self Join은 무엇이고, 어떤 상황에서 사용할 수 있을까요?
+
+`Self Join`은 **같은 테이블을 자기 자신과 조인하는 방식**입니다.
+
+자체적으로 상하 관계나 연결 관계가 있는 데이터를 다룰 때 사용합니다.
+
+
+
+예를 들어, `NPC 상호작용 테이블`이 있다고 했을 때
+
+여기서 `NPC A`가 어떤 `NPC B`와 관계를 맺고 있다면, 각 NPC의 정보를 같은 테이블에서 각각 불러와야 합니다.
+
+이럴 때 `npc_a`, `npc_b`등 자기 자신을 두 개로 나눠서 조인하면&#x20;
+
+NPC A와 NPC B의 이름, 속성 등을 동시에 조회할 수 있습니다.
+
+```sql
+-- npc_relationship (npc_id, related_npc_id, relationship_type)
+
+-- NPC A와 B의 이름, 관계를 한 번에 조회
+SELECT 
+  a.name AS npc_a_name,
+  b.name AS npc_b_name,
+  r.relationship_type
+FROM npc_relationship r
+JOIN npc a ON r.npc_id = a.id
+JOIN npc b ON r.related_npc_id = b.id;
+```
+
+`Self Join`은 위처럼 npc 테이블을 두 번 참조할 때 사용되고,&#x20;
+
+보통 각 테이블에 `별칭(alias)`을 부여해서 사용합니다.
+
+
+
+## Q. 서브쿼리 대신 Join을 사용하면 어떤 장점이 있을까요?
+
+`서브쿼리`는 쿼리 안에 쿼리를 넣는 방식이고,`Join`은 여러 테이블을 연결해서 하나의 쿼리로 처리하는 방식입니다.
+
+
+
+**성능 면에서 보면 Join이 더 유리한 경우가 많습니다.**&#x20;
+
+왜냐면 DB 옵티마이저가 실행 계획을 잘 짜서 한 번에 처리할 수 있고,&#x20;
+
+서브쿼리는 경우에 따라 매번 실행될 수도 있기 때문이에요.
+
+
+
+예를 들어, `캐릭터 테이블`과 `장비 테이블`이 있다고 했을 때.
+
+각 캐릭터의 최고 등급 장비를 보고 싶다면, 서브쿼리로 `"가장 높은 등급"`을 뽑고 다시 캐릭터와 매칭할 수도 있지만, Join을 이용해 `"등급 기준으로 정렬한 장비 테이블"`을 먼저 만들고 캐릭터 테이블과 조인하면 불필요한 중첩이 줄어들고, 인덱스도 더 잘 타게 됩니다.
+
+
+
+\[ 서브쿼리 방식 ]
+
+```sql
+SELECT c.id, c.name,
+       (SELECT e.name 
+        FROM equipment e 
+        WHERE e.character_id = c.id 
+        ORDER BY e.grade DESC 
+        LIMIT 1) AS best_equipment
+FROM character c;
+```
+
+
+
+\[ Join 방식 ]
+
+```sql
+SELECT c.id, c.name, e.name AS best_equipment
+FROM character c
+JOIN equipment e ON c.id = e.character_id
+LEFT JOIN equipment e2 ON c.id = e2.character_id AND e.grade < e2.grade
+WHERE e2.character_id IS NULL;
+```
+
+
+
+## Q. 조인을 사용할 때 N+1 문제가 발생하는 이유와 해결 방법은 무엇인가요?
+
+`N+1 문제`는 **한 건의 쿼리로 N개의 데이터를 조회한 후, 각 데이터에 대해 추가 쿼리를 또 날리는 경우 발생**합니다.
+
+JPA등 ORM을 사용할 때 특히 자주 나타나는데, Join 대신 개별 조회가 일어나면서 쿼리가 N+1번 실행되는 거죠.
+
+
+
+예를 들어, `캐릭터 목록`을 가져온 다음, 각 캐릭터의 `착용 중인 무기` 정보를 따로 조회한다면&#x20;
+
+캐릭터 수가 100명이라면 무기 조회 쿼리가 100번 더 나가게 됩니다.
+
+이를 해결하려면 SQL에서는 Join을 이용해서 **한 번의 쿼리로 필요한 모든 데이터를 조회**하거나,
+
+ORM에서는 `fetch join`이나 `eager loading` 같은 전략을 사용해서 미리 연관 데이터를 가져오게 해야합니다.
+
+```sql
+-- 비효율적인 접근 (ORM에서 자동 생성되는 경우)
+SELECT * FROM character;  -- 1번
+SELECT * FROM equipment WHERE character_id = 1;  -- N번
+SELECT * FROM equipment WHERE character_id = 2;
+...
+```
+
+
+
+## Q.. 조인하는 컬럼에 인덱스를 걸었을 때와 걸지 않았을 때 차이가 있나요?
+
+네, 조인 조건에 사용하는 컬럼에 인덱스를 걸었느냐에 따라 쿼리 성능이 크게 달라질 수 있습니다.
+
+특히 데이터 양이 많을수록 그 차이는 더 커지는데요,
+
+인덱스가 없으면 DB는 조인을 할 때 **모든 행을 비교하는 `Nested Loop Join`** 같은 방식을 씁니다.
+
+하지만 인덱스가 있으면 `해시 조인(Hash Join)` 이나 `머지 조인(Merge Join)`처럼 더 효율적인 방식으로 실행할 수 있습니다.
+
+
+
+**Hash Join**은 한쪽 테이블의 조인 키를 기준으로 해시 테이블을 먼저 만들고,&#x20;
+
+다른 테이블을 스캔하면서 키가 일치하는지 빠르게 탐색하는 방식입니다.
+
+대량의 데이터에도 강하고, 정렬이 안 되어 있어도 괜찮아서&#x20;
+
+굳이 인덱스가 없더라도 메모리만 충분하다면 좋은 성능을 낼 수 있습니다.
+
+
+
+**Merge Join**은 양쪽 테이블이 **조인 키 기준으로 정렬되어 있을 때** 사용하는 방식인데요,&#x20;
+
+정렬된 상태를 유지하면서 양쪽을 쭉 훑으면서 병합해나가기 때문에 성능이 매우 빠르고,&#x20;
+
+특히 대용량 정렬된 집합에서 유리합니다.
+
+단점은 정렬이 전제되어야 하기 때문에, 인덱스가 없으면 정렬 비용이 먼저 발생하게 됩니다.
+
+
+
+즉, 인덱스를 걸어두면 조인 시 이런 고성능 알고리즘을 활용할 수 있고,
+
+DB 옵티마이저가 실행 계획을 더 유리하게 세울 수 있어서 실질적인 쿼리 성능에 큰 영향을 미칩니다.
+
+
+
+{% hint style="info" %}
+다음 내용 추천
+{% endhint %}
+
+{% content-ref url="../undefined-3/n+1.md" %}
+[n+1.md](../undefined-3/n+1.md)
+{% endcontent-ref %}
+
+{% content-ref url="index.md" %}
+[index.md](index.md)
+{% endcontent-ref %}
