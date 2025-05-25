@@ -28,7 +28,7 @@
 ## 03 DATABASE
 
 * [03-01. Join](03-database/03-01_Join.md)
-* [인덱스 (Index)](03-database/index.md)
+* [03-02. Index](03-database/index.md)
 * [정규화 (Normalization)](03-database/normalization.md)
 * [파티셔닝과 샤딩(Partitioning & Sharding)](03-database/partitioning-and-sharding.md)
 * [트랜잭션(Transaction)과 락(Lock)](03-database/transaction-lock.md)
