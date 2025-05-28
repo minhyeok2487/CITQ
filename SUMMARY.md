@@ -39,7 +39,7 @@
 ## 04 Algorithms & Data Structures
 
 * [04-01. Set](04-Algorithms\&DataStructures/04-01_Set.md)
-* [04-01. 정렬 알고리즘](04-Algorithms\&DataStructures/undefined.md)
+* [04-02. 정렬 알고리즘](04-Algorithms\&DataStructures/undefined.md)
 * [우선순위 큐 (Priority Queue)](04-Algorithms\&DataStructures/priority-queue.md)
 * [DFS와 BFS](04-Algorithms\&DataStructures/dfs-bfs.md)
 * [힙(Heap) 자료구조](04-Algorithms\&DataStructures/heap.md)
