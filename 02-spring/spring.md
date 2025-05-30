@@ -128,7 +128,7 @@ public class OrderService {
 [transaction.md](transaction.md)
 {% endcontent-ref %}
 
-{% content-ref url="authentication-authorization.md" %}
-[authentication-authorization.md](authentication-authorization.md)
+{% content-ref url="02-02_authentication-authorization.md" %}
+[02-02\_authentication-authorization.md](02-02_authentication-authorization.md)
 {% endcontent-ref %}
 

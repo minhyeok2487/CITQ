@@ -18,8 +18,8 @@
 ## 02 Spring
 
 * [02-01. Spring 동작 방식](02-spring/spring.md)
+* [02-02. 인증(Authentication)과 인가(Authorization)](02-spring/02-02_authentication-authorization.md)
 * [@Autowired, @RequiredArgsConstructor](02-spring/autowired-requiredargsconstructor.md)
-* [인증(Authentication)과 인가(Authorization)](02-spring/authentication-authorization.md)
 * [트랜잭션(Transaction)](02-spring/transaction.md)
 * [QueryDSL과 SQL Injection](02-spring/querydsl-sql-injection.md)
 * [SecurityContextHolder](02-spring/securitycontextholder.md)
