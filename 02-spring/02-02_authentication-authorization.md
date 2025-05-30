@@ -1,5 +1,7 @@
 # 02-02. 인증(Authentication)과 인가(Authorization)
 
+{% embed url="https://youtu.be/keUHjVbCh2o?si=bdfri9mFlk4AmqBN" %}
+
 ### Q. Http Methods에 대해 설명해주세요.
 
 HTTP 메소드는 클라이언트가 서버에 특정 동작을 요청할 때 사용하는 방식을 말합니다. 주요 메소드로는 `GET`, `POST`, `PUT`, `PATCH`, `DELETE가` 있고 추가적으로 `HEAD`, `OPTIONS` 등이 있습니다.
