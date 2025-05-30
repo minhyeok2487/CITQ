@@ -1,5 +1,7 @@
 # 01-02. Garbage Collection
 
+{% embed url="https://youtu.be/tQzK15utBaM?si=0p29K_HqfXvt6c4A" %}
+
 ## Q. Garbage Collection에 대해 아시는데로 말씀해주세요.
 
 프로그래밍에서 객체나 변수를 생성하면, 이는 마치 책상 위에 물건을 올려두는 것처럼 메모리 공간을 차지하게 됩니다.
