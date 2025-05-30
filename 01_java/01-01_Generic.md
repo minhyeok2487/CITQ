@@ -1,5 +1,7 @@
 # 01-01. Generic
 
+{% embed url="https://youtu.be/fpCbE0QX7KI?si=SzKVxc81vuze4s0i" %}
+
 ## Q. 자바의 Generic에 대해 설명해주세요.
 
 자바의 Generic은 **"이 클래스나 메서드는 나중에 실제로 사용할 때 타입을 정해줄게요"**&#xD558;고 작성할 때 데이터 타입을 정하지 않는 기능입니다.
