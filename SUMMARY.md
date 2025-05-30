@@ -7,7 +7,7 @@
 * [01-01. Generic](01_java/01-01_Generic.md)
 * [01-02. Garbage Collection](01_java/garbage-collection.md)
 * [01-03. 자료형과 객체 비교](01-java/01-03_equals.md)
-* [힙(Heap)과 메모리(Memory)](01_java/heap-memory.md)
+* [01-04. 힙(Heap)과 메모리(Memory)](01-java/01-04_heap-memory.md)
 * [JDK 버전과 JRE](01_java/jdk-jre.md)
 * [스레드(Thread)](01_java/thread.md)
 * [예외(Throwable)](01_java/throwable.md)
