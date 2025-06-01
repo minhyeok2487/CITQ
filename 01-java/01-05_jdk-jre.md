@@ -1,5 +1,7 @@
 # 01-05. Java 버전과 JDK / JRE
 
+{% embed url="https://youtu.be/TgdJnvb9Jow?si=ZLQZ6o6T5r8xcsAz" %}
+
 ### **Q. 자바 JDK와 JRE의 차이점은 무엇인가요?**
 
 * `JDK`는 `Java Development Kit`의 약자로 **자바 애플리케이션을 개발하기 위한 도구 모음**입니다. 컴파일러(javac), 디버거, 자바 API 등 개발에 필요한 모든 도구가 포함되어 있습니다. 개발자들은 JDK를 사용하여 소스 코드를 작성하고, 컴파일하고, 실행할 수 있습니다.
