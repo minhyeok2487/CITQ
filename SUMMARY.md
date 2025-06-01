@@ -9,7 +9,7 @@
 * [01-03. 자료형과 객체 비교](01-java/01-03_equals.md)
 * [01-04. 힙(Heap)과 메모리(Memory)](01-java/01-04_heap-memory.md)
 * [01-05. Java 버전과 JDK / JRE](01-java/01-05_jdk-jre.md)
-* [스레드(Thread)](01_java/thread.md)
+* [01-06. 스레드(Thread)](01-java/01-06_thread.md)
 * [예외(Throwable)](01_java/throwable.md)
 * [Call By Value와 Call By Reference](01_java/call-by-value-call-by-reference.md)
 * [String, equals, StringBuffer](01_java/string-equals-stringbuffer.md)
