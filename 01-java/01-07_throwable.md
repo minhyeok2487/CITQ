@@ -1,6 +1,6 @@
 # 01-07. 예외(Throwable)
 
-## **Q. 자바의 Throwable 클래스에 대해서 설명해주세요.**
+### **Q. 자바의 Throwable 클래스에 대해서 설명해주세요.**
 
 `Throwable` 클래스는 `Java`에서 예외처리를 위한 최상위 클래스입니다. 이 클래스는 크게 `Error`와 `Exception`이라는 두 가지 하위 클래스로 나뉩니다.
 
@@ -17,7 +17,7 @@
 
 
 
-## **Q. try-catch와 try-with-resource는 어떠한 차이점이 있나요?**
+### **Q. try-catch와 try-with-resource는 어떠한 차이점이 있나요?**
 
 `try-catch`와 `try-with-resource`의 **가장 큰 차이점은 자원 관리 방식**에 있습니다.
 
@@ -29,7 +29,7 @@
 
 
 
-## **Q. 아래 코드의 문제점은 무엇인가요?**
+### **Q. 아래 코드의 문제점은 무엇인가요?**
 
 ```java
 static class CheckedRunnable implements Runnable {  
