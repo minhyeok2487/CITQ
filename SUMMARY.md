@@ -49,53 +49,53 @@
 * [자료구조 - 해시 테이블(HashTable)](04-Algorithms\&DataStructures/hashtable.md)
 * [자료구조 - ConcurrentHashMap](04-Algorithms\&DataStructures/concurrent-hash-map.md)
 
-## 네트워크
+## 05 NETWORK
 
-* [전송 계층 (Transport Layer)](undefined-1/transport-layer.md)
-* [네트워크 계층 (Network Layer)](undefined-1/network-layer.md)
-* [Http와 Https](undefined-1/http-https.md)
-* [IP(Internet Protocol)](undefined-1/ip-internet-protocol.md)
-* [프록시 서버](undefined-1/undefined.md)
-* [Http Protocol](undefined-1/http-protocol.md)
-* [소켓(Socket)](undefined-1/socket.md)
-* [로드 밸런싱(Load Balancing)](undefined-1/load-balancing.md)
+* [05-01 Proxy Server](05-network/05-01-proxy-server.md)
+* [전송 계층 (Transport Layer)](05-network/transport-layer.md)
+* [네트워크 계층 (Network Layer)](05-network/network-layer.md)
+* [Http와 Https](05-network/http-https.md)
+* [IP(Internet Protocol)](05-network/ip-internet-protocol.md)
+* [Http Protocol](05-network/http-protocol.md)
+* [소켓(Socket)](05-network/socket.md)
+* [로드 밸런싱(Load Balancing)](05-network/load-balancing.md)
 
 ## 디자인 패턴
 
-* [전략 패턴 (Strategy Pattern)](undefined-2/strategy-pattern.md)
-* [싱글톤 패턴 (Singleton Pattern)](undefined-2/singleton-pattern.md)
-* [템플릿 메서드 패턴과 전략 패턴](undefined-2/undefined.md)
-* [데코레이터 패턴 (Decorator pattern)](undefined-2/decorator-pattern.md)
+* [전략 패턴 (Strategy Pattern)](undefined/strategy-pattern.md)
+* [싱글톤 패턴 (Singleton Pattern)](undefined/singleton-pattern.md)
+* [템플릿 메서드 패턴과 전략 패턴](undefined/undefined.md)
+* [데코레이터 패턴 (Decorator pattern)](undefined/decorator-pattern.md)
 
 ## 웹
 
-* [CORS 정책](undefined-3/cors.md)
-* [동시성 제어](undefined-3/undefined.md)
-* [N+1 문제](undefined-3/n+1.md)
-* [웹 브라우저 동작원리](undefined-3/undefined-1.md)
-* [URI, URL, URN](undefined-3/uri-url-urn.md)
-* [채팅 아키텍처 설계](undefined-3/undefined-2.md)
+* [CORS 정책](undefined-1/cors.md)
+* [동시성 제어](undefined-1/undefined.md)
+* [N+1 문제](undefined-1/n+1.md)
+* [웹 브라우저 동작원리](undefined-1/undefined-1.md)
+* [URI, URL, URN](undefined-1/uri-url-urn.md)
+* [채팅 아키텍처 설계](undefined-1/undefined-2.md)
 
 ## 개발자
 
-* [개발 방법론 TDD](undefined-4/tdd.md)
+* [개발 방법론 TDD](undefined-2/tdd.md)
 
 ## 운영체제
 
-* [JIT & AOT 컴파일](undefined-5/jit-and-aot.md)
-* [컨텍스트 스위칭(Context Switching)](undefined-5/context-switching.md)
-* [프로세스와 스레드](undefined-5/undefined.md)
-* [싱글 스레드와 멀티 스레드](undefined-5/undefined-1.md)
+* [JIT & AOT 컴파일](undefined-3/jit-and-aot.md)
+* [컨텍스트 스위칭(Context Switching)](undefined-3/context-switching.md)
+* [프로세스와 스레드](undefined-3/undefined.md)
+* [싱글 스레드와 멀티 스레드](undefined-3/undefined-1.md)
 
 ## 코딩테스트
 
-* [Stack / Queue (스택 / 큐)](undefined-6/stack-queue.md)
-* [Heap(우선 순위 큐)](undefined-6/heap.md)
-* [DP(동적 계획법)](undefined-6/dp.md)
-* [DFS(깊이 우선 탐색)](undefined-6/dfs.md)
-* [BFS(너비 우선 탐색)](undefined-6/bfs.md)
-* [Greedy(그리디 알고리즘)](undefined-6/greedy.md)
-* [해시(Hash)](undefined-6/hash.md)
-* [투 포인터 알고리즘](undefined-6/undefined.md)
-* [Shortest path](undefined-6/shortest-path.md)
-* [수학적 사고](undefined-6/undefined-1.md)
+* [Stack / Queue (스택 / 큐)](undefined-4/stack-queue.md)
+* [Heap(우선 순위 큐)](undefined-4/heap.md)
+* [DP(동적 계획법)](undefined-4/dp.md)
+* [DFS(깊이 우선 탐색)](undefined-4/dfs.md)
+* [BFS(너비 우선 탐색)](undefined-4/bfs.md)
+* [Greedy(그리디 알고리즘)](undefined-4/greedy.md)
+* [해시(Hash)](undefined-4/hash.md)
+* [투 포인터 알고리즘](undefined-4/undefined.md)
+* [Shortest path](undefined-4/shortest-path.md)
+* [수학적 사고](undefined-4/undefined-1.md)
