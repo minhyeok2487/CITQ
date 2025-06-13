@@ -52,11 +52,11 @@
 ## 05 NETWORK
 
 * [05-01 Proxy Server](05-network/05-01-proxy-server.md)
+* [05-02 Http 프로토콜](05-network/05-02_http-protocol.md)
 * [전송 계층 (Transport Layer)](05-network/transport-layer.md)
 * [네트워크 계층 (Network Layer)](05-network/network-layer.md)
 * [Http와 Https](05-network/http-https.md)
 * [IP(Internet Protocol)](05-network/ip-internet-protocol.md)
-* [Http Protocol](05-network/http-protocol.md)
 * [소켓(Socket)](05-network/socket.md)
 * [로드 밸런싱(Load Balancing)](05-network/load-balancing.md)
 
