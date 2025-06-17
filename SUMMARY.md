@@ -60,6 +60,15 @@
 * [소켓(Socket)](05-network/socket.md)
 * [로드 밸런싱(Load Balancing)](05-network/load-balancing.md)
 
+## 06 WEB
+
+* [06-01 CORS 정책](06-web/06-01-cors.md)
+* [동시성 제어](06-web/undefined.md)
+* [N+1 문제](06-web/n+1.md)
+* [웹 브라우저 동작원리](06-web/undefined-1.md)
+* [URI, URL, URN](06-web/uri-url-urn.md)
+* [채팅 아키텍처 설계](06-web/undefined-2.md)
+
 ## 디자인 패턴
 
 * [전략 패턴 (Strategy Pattern)](undefined/strategy-pattern.md)
@@ -67,35 +76,26 @@
 * [템플릿 메서드 패턴과 전략 패턴](undefined/undefined.md)
 * [데코레이터 패턴 (Decorator pattern)](undefined/decorator-pattern.md)
 
-## 웹
-
-* [CORS 정책](undefined-1/cors.md)
-* [동시성 제어](undefined-1/undefined.md)
-* [N+1 문제](undefined-1/n+1.md)
-* [웹 브라우저 동작원리](undefined-1/undefined-1.md)
-* [URI, URL, URN](undefined-1/uri-url-urn.md)
-* [채팅 아키텍처 설계](undefined-1/undefined-2.md)
-
 ## 개발자
 
-* [개발 방법론 TDD](undefined-2/tdd.md)
+* [개발 방법론 TDD](undefined-1/tdd.md)
 
 ## 운영체제
 
-* [JIT & AOT 컴파일](undefined-3/jit-and-aot.md)
-* [컨텍스트 스위칭(Context Switching)](undefined-3/context-switching.md)
-* [프로세스와 스레드](undefined-3/undefined.md)
-* [싱글 스레드와 멀티 스레드](undefined-3/undefined-1.md)
+* [JIT & AOT 컴파일](undefined-2/jit-and-aot.md)
+* [컨텍스트 스위칭(Context Switching)](undefined-2/context-switching.md)
+* [프로세스와 스레드](undefined-2/undefined.md)
+* [싱글 스레드와 멀티 스레드](undefined-2/undefined-1.md)
 
 ## 코딩테스트
 
-* [Stack / Queue (스택 / 큐)](undefined-4/stack-queue.md)
-* [Heap(우선 순위 큐)](undefined-4/heap.md)
-* [DP(동적 계획법)](undefined-4/dp.md)
-* [DFS(깊이 우선 탐색)](undefined-4/dfs.md)
-* [BFS(너비 우선 탐색)](undefined-4/bfs.md)
-* [Greedy(그리디 알고리즘)](undefined-4/greedy.md)
-* [해시(Hash)](undefined-4/hash.md)
-* [투 포인터 알고리즘](undefined-4/undefined.md)
-* [Shortest path](undefined-4/shortest-path.md)
-* [수학적 사고](undefined-4/undefined-1.md)
+* [Stack / Queue (스택 / 큐)](undefined-3/stack-queue.md)
+* [Heap(우선 순위 큐)](undefined-3/heap.md)
+* [DP(동적 계획법)](undefined-3/dp.md)
+* [DFS(깊이 우선 탐색)](undefined-3/dfs.md)
+* [BFS(너비 우선 탐색)](undefined-3/bfs.md)
+* [Greedy(그리디 알고리즘)](undefined-3/greedy.md)
+* [해시(Hash)](undefined-3/hash.md)
+* [투 포인터 알고리즘](undefined-3/undefined.md)
+* [Shortest path](undefined-3/shortest-path.md)
+* [수학적 사고](undefined-3/undefined-1.md)

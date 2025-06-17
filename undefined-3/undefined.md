@@ -1,31 +1,66 @@
-# 프로세스와 스레드
+# 투 포인터 알고리즘
 
-## **Q. 멀티태스킹과 멀티프로세싱의 차이점을 설명해주세요.**
+## 0. 들어가기전
 
-멀티태스킹은 운영체제 소프트웨어 관점에서 하나의 CPUI가 여러 작업을 동시에 처리하는 것처럼 보이게 하는 기술입니다. CPU 시간을 작은 단위로 분할해서 여러 작업을 번갈아 수행합니다. 반면 멀티프로세싱은 하드웨어 관점에서 여러 CPU를 사용하여 실제로 동시에 여러 작업을 처리하는 기술입니다.
-
-
-
-## **Q. 프로세스와 스레드의 차이점은 무엇일까요?**
-
-프로세스는 실행 중인 프로그램의 인스턴스로, 독립적인 메모리 공간과 시스템 자원을 가지는 컨테이너 역할을 합니다. 반면 스레드는 프로세스 내에서 실제로 작업을 실행하는 단위로, 같은 프로세스 내의 스레드들은 메모리와 자원을 공유합니다. 프로세스는 서로 독립적이지만, 스레드는 같은 프로세스 내에서 자원을 공유하므로 더 가볍고 생성과 관리가 용이합니다.
-
-
-
-## **Q. CPU 바운드 작업과 I/O 바운드 작업의 차이는 무엇인가요?**
-
-CPU 바운드 작업은 복잡한 수학 연산이나 데이터 처리처럼 CPU의 연산 능력을 많이 사용하는 작업을 말합니다. 반면 I/O 바운드 작업은 데이터베이스 쿼리나 파일 읽기/쓰기처럼 입출력 작업이 많은 경우를 말합니다. 이때 스레드는 대부분의 시간을 I/O 작업이 완료되기를 기다리는데 소비하며 CPU는 상대적으로 덜 사용됩니다.
-
-
-
-## **Q. 웹 애플리케이션 서버에서 스레드 개수는 어떻게 결정하는 것이 좋을까요?**
-
-웹 애플리케이션의 특성상 대부분 I/O 바운드 작업이 많기 때문에, CPU 코어 수보다 많은 스레드를 생성하는 것이 일반적입니다. 하나의 요청이 CPU를 1% 정도만 사용한다면, 이론적으로는 100개의 스레드를 만들어 동시에 100명의 사용자 요청을 처리할 수 있습니다. 단, 너무 많은 스레드를 생성하면 컨텍스트 스위칭 비용이 증가하므로, 실제 운영 환경에서는 성능 테스트를 통해 최적의 스레드 개수를 결정해야 합니다.
-
-
-
-> 연관된 문서
+> 배열이나 리스트와 같은 순타적인 자료 구조에서 두 개의 포인터를 이용하여&#x20;
 >
-> * [컨텍스트 스위칭](context-switching.md)
-> * [자바에서의 스레드](../01-java/01-06_thread.md)
+> 특정 조건을 만족하는 구간이나 값을 효율적으로 찾는 알고리즘
+>
+> 보통 배열의 양 끝이나 특정 위치에서 시작하여 포인터를 이동시키면서 문제 해결
 
+
+
+## 1. 보석 쇼핑
+
+* [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67258)
+* 프로그래머스 Lv.3 / 체감 난이도 Lv.3
+
+```java
+import java.util.*;
+
+class Solution {
+    public int[] solution(String[] gems) {
+        int[] answer = new int[2];
+        Set<String> gemKinds = new HashSet<>(Arrays.asList(gems));
+        int kindCount = gemKinds.size();
+        
+        // 현재 구간에 포함된 보석들의 개수를 저장하는 Map
+        Map<String, Integer> gemCount = new HashMap<>();
+        
+        int start = 0;
+        int end = 0;
+        int minLength = Integer.MAX_VALUE;
+        int minStart = 0;
+        
+        while(true) {
+            // 모든 종류의 보석을 포함할 때까지 end 포인터 이동
+            if(gemCount.size() < kindCount && end < gems.length) {
+                gemCount.put(gems[end], gemCount.getOrDefault(gems[end], 0) + 1);
+                end++;
+            }
+            // 모든 종류의 보석을 포함하면 start 포인터 이동
+            else if(gemCount.size() == kindCount) {
+                if(end - start < minLength) {
+                    minLength = end - start;
+                    minStart = start;
+                }
+                
+                gemCount.put(gems[start], gemCount.get(gems[start]) - 1);
+                if(gemCount.get(gems[start]) == 0) {
+                    gemCount.remove(gems[start]);
+                }
+                start++;
+            }
+            // 더 이상 진행할 수 없는 경우
+            else {
+                break;
+            }
+        }
+        
+        answer[0] = minStart + 1;
+        answer[1] = minStart + minLength;
+        
+        return answer;
+    }
+}
+```
