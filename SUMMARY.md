@@ -42,7 +42,7 @@
 * [04-02. 정렬](04-Algorithms\&DataStructures/04-02_Sort.md)
 * [04-03. 우선순위 큐 (Priority Queue)](04-Algorithms\&DataStructures/priority-queue.md)
 * [DFS와 BFS](04-Algorithms\&DataStructures/dfs-bfs.md)
-* [힙(Heap) 자료구조](04-Algorithms\&DataStructures/heap.md)
+* [04-04. 힙(Heap) 자료구조](04-Algorithms\&DataStructures/heap.md)
 * [스택(Stack)과 큐(Queue)](04-Algorithms\&DataStructures/stack-queue.md)
 * [암호화 알고리즘](04-Algorithms\&DataStructures/undefined-1.md)
 * [LinkedList](04-Algorithms\&DataStructures/linkedlist.md)
