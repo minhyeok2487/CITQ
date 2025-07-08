@@ -63,7 +63,7 @@
 ## 06 WEB
 
 * [06-01 CORS 정책](06-web/06-01-cors.md)
-* [동시성 제어](06-web/undefined.md)
+* [06-02 동시성 제어](06-web/06-02-concurrency-control.md)
 * [N+1 문제](06-web/n+1.md)
 * [웹 브라우저 동작원리](06-web/undefined-1.md)
 * [URI, URL, URN](06-web/uri-url-urn.md)

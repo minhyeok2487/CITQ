@@ -24,8 +24,8 @@
 
 {% tabs %}
 {% tab title="비슷한 질문" %}
-{% content-ref url="../06-web/undefined.md" %}
-[undefined.md](../06-web/undefined.md)
+{% content-ref url="../06-web/06-02-concurrency-control.md" %}
+[06-02-concurrency-control.md](../06-web/06-02-concurrency-control.md)
 {% endcontent-ref %}
 
 {% content-ref url="../01-java/01-06_thread.md" %}
