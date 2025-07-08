@@ -36,60 +36,60 @@
 * [03-07. Redis](03-database/03-07-redis.md)
 * [03-08. 트랜잭션(Transaction)과 락(Lock)](03-database/03-08-transaction-lock.md)
 
-## 04 Algorithms & Data Structures
+## 04 NETWORK
 
-* [04-01. Set](04-algorithms-and-data-structures/04-01-set.md)
-* [04-02. 정렬](04-algorithms-and-data-structures/04-02-sort.md)
-* [04-03. BFS(너비 우선 탐색)](04-algorithms-and-data-structures/04-03-bfs.md)
-* [04-04. ConcurrentHashMap](04-algorithms-and-data-structures/04-04-concurrent-hash-map.md)
-* [04-05. DFS와 BFS](04-algorithms-and-data-structures/04-05-dfs-bfs.md)
-* [04-06. DFS(깊이 우선 탐색)](04-algorithms-and-data-structures/04-06-dfs.md)
-* [04-07. DP(동적 계획법)](04-algorithms-and-data-structures/04-07-dp.md)
-* [04-08. Greedy(그리디 알고리즘)](04-algorithms-and-data-structures/04-08-greedy.md)
-* [04-09. 해시(Hash)](04-algorithms-and-data-structures/04-09-hash.md)
-* [04-10. 해시 테이블(HashTable)](04-algorithms-and-data-structures/04-10-hashtable.md)
-* [04-11. 힙(Heap) 자료구조](04-algorithms-and-data-structures/04-11-heap.md)
-* [04-12. LinkedList](04-algorithms-and-data-structures/04-12-linkedlist.md)
-* [04-13. 우선순위 큐 (Priority Queue)](04-algorithms-and-data-structures/04-13-priority-queue.md)
-* [04-14. Shortest path](04-algorithms-and-data-structures/04-14-shortest-path.md)
-* [04-15. 스택(Stack)과 큐(Queue)](04-algorithms-and-data-structures/04-15-stack-queue.md)
-* [04-16. 투 포인터 알고리즘](04-algorithms-and-data-structures/04-16-two-pointer-algorithm.md)
-* [04-17. 수학적 사고](04-algorithms-and-data-structures/04-17-mathematical-thinking.md)
+* [04-01 Proxy Server](04-network/04-01-proxy-server.md)
+* [04-02 Http 프로토콜](04-network/04-02-http-protocol.md)
+* [04-03 Http와 Https](04-network/04-03-http-https.md)
+* [04-04 IP(Internet Protocol)](04-network/04-04-ip-internet-protocol.md)
+* [04-05 로드 밸런싱(Load Balancing)](04-network/04-05-load-balancing.md)
+* [04-06 네트워크 계층 (Network Layer)](04-network/04-06-network-layer.md)
+* [04-07 소켓(Socket)](04-network/04-07-socket.md)
+* [04-08 전송 계층 (Transport Layer)](04-network/04-08-transport-layer.md)
 
-## 05 NETWORK
+## 05 WEB
 
-* [05-01 Proxy Server](05-network/05-01-proxy-server.md)
-* [05-02 Http 프로토콜](05-network/05-02-http-protocol.md)
-* [05-03 Http와 Https](05-network/05-03-http-https.md)
-* [05-04 IP(Internet Protocol)](05-network/05-04-ip-internet-protocol.md)
-* [05-05 로드 밸런싱(Load Balancing)](05-network/05-05-load-balancing.md)
-* [05-06 네트워크 계층 (Network Layer)](05-network/05-06-network-layer.md)
-* [05-07 소켓(Socket)](05-network/05-07-socket.md)
-* [05-08 전송 계층 (Transport Layer)](05-network/05-08-transport-layer.md)
+* [05-01 CORS 정책](05-web/05-01-cors.md)
+* [05-02 동시성 제어](05-web/05-02-concurrency-control.md)
+* [05-03 N+1 문제](05-web/05-03-n+1.md)
+* [05-04 URI, URL, URN](05-web/05-04-uri-url-urn.md)
+* [05-05 웹 브라우저 동작원리 및 DNS](05-web/05-05-web-browser-and-dns.md)
+* [05-06 채팅 아키텍처 설계](05-web/05-06-chat-architecture-design.md)
 
-## 06 WEB
+## 06 Design Patterns
 
-* [06-01 CORS 정책](06-web/06-01-cors.md)
-* [06-02 동시성 제어](06-web/06-02-concurrency-control.md)
-* [06-03 N+1 문제](06-web/06-03-n+1.md)
-* [06-04 URI, URL, URN](06-web/06-04-uri-url-urn.md)
-* [06-05 웹 브라우저 동작원리 및 DNS](06-web/06-05-web-browser-and-dns.md)
-* [06-06 채팅 아키텍처 설계](06-web/06-06-chat-architecture-design.md)
+* [06-01 데코레이터 패턴 (Decorator pattern)](06-design-patterns/06-01-decorator-pattern.md)
+* [06-02 싱글톤 패턴 (Singleton Pattern)](06-design-patterns/06-02-singleton-pattern.md)
+* [06-03 전략 패턴 (Strategy Pattern)](06-design-patterns/06-03-strategy-pattern.md)
+* [06-04 템플릿 메서드 패턴과 전략 패턴](06-design-patterns/06-04-template-method-and-strategy-pattern.md)
 
-## 07 Design Patterns
+## 07 Testing
 
-* [07-01 데코레이터 패턴 (Decorator pattern)](07-design-patterns/07-01-decorator-pattern.md)
-* [07-02 싱글톤 패턴 (Singleton Pattern)](07-design-patterns/07-02-singleton-pattern.md)
-* [07-03 전략 패턴 (Strategy Pattern)](07-design-patterns/07-03-strategy-pattern.md)
-* [07-04 템플릿 메서드 패턴과 전략 패턴](07-design-patterns/07-04-template-method-and-strategy-pattern.md)
+* [07-01 개발 방법론 TDD](07-testing/07-01-tdd.md)
 
-## 08 Testing
+## 08 Operating System and System Design
 
-* [08-01 개발 방법론 TDD](08-testing/08-01-tdd.md)
+* [08-01 컨텍스트 스위칭(Context Switching)](08-operating-system-and-system-design/08-01-context-switching.md)
+* [08-02 JIT & AOT 컴파일](08-operating-system-and-system-design/08-02-jit-and-aot.md)
+* [08-03 프로세스와 스레드](08-operating-system-and-system-design/08-03-process-and-thread.md)
+* [08-04 싱글 스레드와 멀티 스레드](08-operating-system-and-system-design/08-04-single-multi-thread.md)
 
-## 09 Operating System and System Design
+## 09 Algorithms & Data Structures
 
-* [09-01 컨텍스트 스위칭(Context Switching)](09-operating-system-and-system-design/09-01-context-switching.md)
-* [09-02 JIT & AOT 컴파일](09-operating-system-and-system-design/09-02-jit-and-aot.md)
-* [09-03 프로세스와 스레드](09-operating-system-and-system-design/09-03-process-and-thread.md)
-* [09-04 싱글 스레드와 멀티 스레드](09-operating-system-and-system-design/09-04-single-multi-thread.md)
+* [09-01. Set](09-algorithms-and-data-structures/09-01-set.md)
+* [09-02. 정렬](09-algorithms-and-data-structures/09-02-sort.md)
+* [09-03. BFS(너비 우선 탐색)](09-algorithms-and-data-structures/09-03-bfs.md)
+* [09-04. ConcurrentHashMap](09-algorithms-and-data-structures/09-04-concurrent-hash-map.md)
+* [09-05. DFS와 BFS](09-algorithms-and-data-structures/09-05-dfs-bfs.md)
+* [09-06. DFS(깊이 우선 탐색)](09-algorithms-and-data-structures/09-06-dfs.md)
+* [09-07. DP(동적 계획법)](09-algorithms-and-data-structures/09-07-dp.md)
+* [09-08. Greedy(그리디 알고리즘)](09-algorithms-and-data-structures/09-08-greedy.md)
+* [09-09. 해시(Hash)](09-algorithms-and-data-structures/09-09-hash.md)
+* [09-10. 해시 테이블(HashTable)](09-algorithms-and-data-structures/09-10-hashtable.md)
+* [09-11. 힙(Heap) 자료구조](09-algorithms-and-data-structures/09-11-heap.md)
+* [09-12. LinkedList](09-algorithms-and-data-structures/09-12-linkedlist.md)
+* [09-13. 우선순위 큐 (Priority Queue)](09-algorithms-and-data-structures/09-13-priority-queue.md)
+* [09-14. Shortest path](09-algorithms-and-data-structures/09-14-shortest-path.md)
+* [09-15. 스택(Stack)과 큐(Queue)](09-algorithms-and-data-structures/09-15-stack-queue.md)
+* [09-16. 투 포인터 알고리즘](09-algorithms-and-data-structures/09-16-two-pointer-algorithm.md)
+* [09-17. 수학적 사고](09-algorithms-and-data-structures/09-17-mathematical-thinking.md)
